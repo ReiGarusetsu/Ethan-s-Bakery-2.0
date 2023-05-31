@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan's Bakery</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <section class="main swiper mySwiper">
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Головна</a></li>
+                <li>
+                    <a href="asortyment.html">Асортимент</a>
+                    <ul class="dropdown">
+                        <li><a href="vypichka.html">Випічка</a></li>
+                        <li><a href="condytersyki_vyroby.html">Кондитерські вироби</a></li>
+                        <li><a href="jam.html">Джеми та варення</a></li>
+                        <li><a href="snidanky.html">Сніданки</a></li>
+                        <li><a href="napoy.html">Напої</a></li>
+                    </ul>
+                </li>
+                <li><a href="new_products.html">Новинки</a></li>
+                <li><a href="orders.html">Замовлення</a></li>
+                <li><a href="about_us.html">Про нас</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="Images/8e5d73b9-fdd7-4cab-a771-75b32ff00111.avif" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">Ethan's Bakery</span>
+                    <h2>
+                        Тут знаходиться уся випічка !
+                    </h2>
+                    <a href="asortyment.html" class="button">Асортимент</a>
+                </div>
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="Images/pexels-pixabay-461060.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">Ethan's Bakery</span>
+                    <h2>
+                        Тут можна подивитися новинки , які з'явились нещодавно !
+                    </h2>
+                    <a href="new_products.html" class="button">Новинки</a>
+                </div>
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="Images/bakery-packaging-technology.webp" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">Ethan's Bakery</span>
+                    <h2>
+                        Знайшов щось для себе , зроби замовлення !
+                    </h2>
+                    <a href="orders.html" class="button">Замовлення</a>
+                </div>
+            </div>
+
+            <div class="slide swiper-slide">
+                <img src="Images/Raouf-Djaiz-Photography-223-1-1400x858.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">Ethan's Bakery</span>
+                    <h2>
+                        Дізнатися про нас можна тут !
+                    </h2>
+                    <a href="about_us.html" class="button">Про нас</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="JS/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+</body>
+</html>
